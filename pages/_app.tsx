@@ -5,7 +5,7 @@ import { light } from "@/scss/MaterialTheme";
 import { useState } from "react";
 import "../scss/app.scss";
 import "../scss/pc/main.scss";
-import "../scss/pc/property/main.scss";
+import "../scss/pc/property/property.scss";
 
 export default function App({ Component, pageProps }: AppProps) {
   //@ts-ignore

@@ -1133,72 +1133,10 @@
                                         text-overflow: ellipsis;
                                     }
                                 }
-                            }
-                        .name {
-                            overflow: hidden;
-                            color: #181a20;
-                            text-overflow: ellipsis;
-                            white-space: nowrap;
-                            font-family: $font;
-                            font-size: 15px;
-                            font-style: normal;
-                            font-weight: 600;
-                            line-height: normal;
-                            text-transform: capitalize;
-                            cursor: pointer;    
-                        }
-                        .desc {
-                            margin-top: 5px;
-                            overflow: hidden;
-                            color: #717171;
-                            font-family: $font;
-                            font-size: 13px;
-                            font-style: normal;
-                            font-weight: 400;
-                            line-height: normal;
-                            text-overflow: ellipsis;
-                            white-space: nowrap;
-                        }
-                        .options {
-                            margin-top: 15px;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-                            div {
-                                display: flex;
-                                flex-direction: row;
-                                img {
-                                    margin-right: 5px;
-                                    width: 17px;
-                                    height: 17px;
-                                }
-                                span {
-                                    color: #181a20;
-                                    font-family: $font;
-                                    font-size: 13px;
-                                    font-style: normal;
-                                    font-weight: 400;
-                                    line-height: normal;   
-                                }
-                            }
-                        }}
+                            }}
                     }
-                // .top-agent-card {
-                //     width: 205px;
-                //     height: 280px;
-                //     display: flex;
-                //     flex-direction: column;
-                //     img {
-                //         width: 209px;
-                //         height: 209px;
-                //         border-radius: 50%;
-                //         cursor: pointer;
-                //         object-fit: cover;
-                //     }
-                   
-                    
-                // } 
             }    
         }
     }
-}}
+}
+}

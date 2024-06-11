@@ -6,6 +6,7 @@ import { useState } from "react";
 import "../scss/app.scss";
 import "../scss/pc/main.scss";
 import "../scss/pc/property/property.scss";
+import "../scss/mobile/main.scss";
 
 export default function App({ Component, pageProps }: AppProps) {
   //@ts-ignore

@@ -7,11 +7,33 @@ import TrendProperties from "@/libs/components/homepage/TrendProperties";
 import { Stack } from "@mui/material";
 import { NextPage } from "next";
 import useDeviceDetect from "@/libs/hooks/useDeviceDetect";
+import { useQuery } from "@apollo/client";
+import { GET_PROPERTIES } from "@/apollo/user/query";
 
 
 const Home: NextPage = () => {
   const device = useDeviceDetect();
-  // Device: Mobile or PC
+
+  const {
+    loading: getPropertiesLoading,
+    data: getPropertiesData,
+    error: getPropertiesError,
+    refetch: getPropertiesRefetch
+  } = useQuery(GET_PROPERTIES, {
+    fetchPolicy: "network-only",
+    variables: {
+      input: {
+        page: 2,
+        limit: 2,
+        sort: "createdAt",
+        direction: "DESC",
+        search: {},
+    },
+    },
+  });
+
+  console.log("getPropertiesData=> ",getPropertiesData);
+
 
   if(device === "mobile") {
     return <Stack>HOMEPAGE MOBILE</Stack>;

@@ -1,11 +1,10 @@
 import withLayoutBasic from "@/libs/components/layout/LayoutBasic";
 import { Box, Button, Pagination, Stack, Typography } from "@mui/material";
 import { NextPage } from "next";
-import { useState } from "react";
+import React, { useState } from "react";
 import PropertyCard from "../../libs/components/property/PropertyCard";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
-import { Filter } from "@mui/icons-material";
-//import Filter from "@/libs/components/property/Filter";
+import Filter from "@/libs/components/property/Filter";
 
 const PropertyList: NextPage = () => {
   const [properties, setProperties] = useState<number[]>([1, 2, 3, 4, 5, 6]);
@@ -39,7 +38,7 @@ const PropertyList: NextPage = () => {
               />
             </Stack>
             <Stack className="total-result">
-              <Typography>Total 5 properties available</Typography>
+              <Typography>Total 6 properties available</Typography>
             </Stack>
           </Stack>
         </Stack>

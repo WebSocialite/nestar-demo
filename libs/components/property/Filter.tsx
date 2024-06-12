@@ -48,10 +48,10 @@ const Filter = () => {
                 <p className="title" style={{ textShadow: "0px 3px 4px #b9b9b9"}}>
                     Location
                 </p>
-                <Stack className="`property-location"
+                <Stack className="property-location"
                 style={{ height: showMore ? "253px" : "115px" }}
                 >
-                 {["SEOUL", "BUSAN", "DAEGU"].map((location: string) => {
+                 {["SEOUL", "BUSAN", "INCHEON", "DAEGU"].map((location: string) => {
                     return (
                         <Stack className="input-box" key={location}>
                             <Checkbox
@@ -92,7 +92,7 @@ const Filter = () => {
                <Stack className="button-group">
                 <Button sx={{
                     borderRadius: "12px 0 0 12px",
-                    border: "1px solid #b9b9b9",
+                    border: "2px solid black",
                 }}
                 >
                     Any
@@ -126,11 +126,11 @@ const Filter = () => {
                 4
             </Button>
             <Button sx={{
-                    borderRadius: 0,
+                    borderRadius: "0px 12px 12px 0px",
                     border: "1px solid #b9b9b9",
                 }}
             >
-                5
+                5+
             </Button>
                 </Stack>
             </Stack>
@@ -140,7 +140,7 @@ const Filter = () => {
                 <Button 
                 sx={{
                     borderRadius: "12px 0 0 12px",
-                    border: "1px solid #b9b9b9",
+                    border: "2px solid black",
                 }}
                 >
                     Any
@@ -176,10 +176,10 @@ const Filter = () => {
                 </Button>
                 <Button 
                 sx={{
-                    borderRadius: 0,
+                    borderRadius: "0px 12px 12px 0px",
                     border: "1px solid #b9b9b9",
                 }}>
-                    5
+                    5+
                 </Button>
                </Stack>
             </Stack>
@@ -249,8 +249,9 @@ const Filter = () => {
             <Stack className="find-your-home">
                <Typography className="title">Price Range</Typography>
                <Stack className="square-year-input">
+                
                 <input type="number"
-                placeholder="$ min"
+                placeholder="$ 0"
                 min={0}
                 value={propertyPrice?.start ?? 0}
                 onChange={(e: any) => {
@@ -262,7 +263,7 @@ const Filter = () => {
                 />
                 <div className="central-divider"></div>
                 <input type="number"
-                placeholder="$ max"
+                placeholder="$ 250000"
                 value={propertyPrice?.end ?? 0}
                 onChange={(e: any) => {
                     console.log("value: ",e.target.value);

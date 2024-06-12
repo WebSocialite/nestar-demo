@@ -13,4 +13,4 @@ import React, { useState } from "react";
 
 // config.ts
 
-export const propertySquare: number[] = [50, 60, 70, 80, 90, 100, 120];
+export const propertySquare: number[] = [0, 50, 60, 100, 220, 300, 400, 500];
